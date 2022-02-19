@@ -1,12 +1,23 @@
+/**
+ * @author Andrea Ximena Ramirez Recinos
+ * @version 19/02/2022
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos | Seccion 20
+ * Andrea Ximena Ramirez Recinos, carne 21874
+ * Programa para la evaluacion de expresiones postfix
+ */
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.FileNotFoundException; 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class vista {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		controlador ctr = new controlador();
 		FileInputStream fstream;
@@ -32,15 +43,20 @@ public class vista {
 			//Cerrar el input
 			fstream.close();
 		}
+		
+		// Manejo de errores
+	
 		catch (FileNotFoundException e) {
 			System.out.println("Dirección Inválida");
-			e.printStackTrace();
 		}
 		catch (IOException e) {
 			e.printStackTrace();
 		}
 		catch(ArithmeticException e) {
 			System.out.println("La expresion es indefinida");
+		}
+		catch(IndexOutOfBoundsException e) {
+			System.out.println("No hay argumentos validos o suficientes");
 		}
 	}
 }
