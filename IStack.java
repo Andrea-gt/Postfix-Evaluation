@@ -4,7 +4,7 @@
  * Universidad del Valle de Guatemala
  * Algoritmos y Estructuras de Datos | Seccion 20
  * Andrea Ximena Ramirez Recinos, carne 21874
- * Programa para la evaluacion de expresiones postfix
+ * Interfaz de Pila
  */
 public interface IStack<T> {
 

@@ -4,8 +4,9 @@
  * Universidad del Valle de Guatemala
  * Algoritmos y Estructuras de Datos | Seccion 20
  * Andrea Ximena Ramirez Recinos, carne 21874
- * Programa para la evaluacion de expresiones postfix
+ * Clase Vista, donde se imprime todo y se solician inputs
  */
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException; 
@@ -19,7 +20,7 @@ public class vista {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		controlador ctr = new controlador();
+		Calculadora ctr = new Calculadora();
 		FileInputStream fstream;
 		
 		System.out.println("Calculadora para expresiones Postfix");

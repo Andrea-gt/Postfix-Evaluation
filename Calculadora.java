@@ -4,9 +4,9 @@
  * Universidad del Valle de Guatemala
  * Algoritmos y Estructuras de Datos | Seccion 20
  * Andrea Ximena Ramirez Recinos, carne 21874
- * Programa para la evaluacion de expresiones postfix
+ * Clase Calculadora donde se realiza la evaluacion de la expresion
  */
-public class controlador {
+public class Calculadora {
 
 	Stack <Integer> stack =new Stack<>();
 
@@ -59,3 +59,4 @@ public class controlador {
 		return stack.pull();
 	}
 }
+
